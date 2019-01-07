@@ -41,6 +41,10 @@ items:
         env:
         - name: GUID
           value: ${GUID}
+        - name: nexusUsername
+          value: gpte
+        - name: nexusPwd
+          value: redhat
         jenkinsfilePath: Jenkinsfile
 kind: List
 metadata: []" | oc create -f - -n ${GUID}-jenkins
